@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height: 950px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+}
+
+body{
+    background-color: #23252C;
+    background-image: url("Images/bg-note-white.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+/* Layout */
+#root {
+    background: white;
+    width: 317px;
+    height: 900px;
+    border-radius: 10px;
+    
+    box-shadow: 0 0 10px 2px #FFF;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-div{
+    margin-bottom: 0px;
+}
+
+.My-Title{
+    padding-top: 10px;
+}
+
+.main-div{
+    width: 317px;
+    height: 519px;
+    background: #1A1B21;
+    
+    display: block;
+    margin: 0px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+}
+
+footer {
+    width: 317px;
+    height: 64px;
+    border-radius: 0px 0px 10px 10px;
+    background: #161619;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-div,
+.interests-div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 40px;
+    width: 278px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Image */
+
+.profile-pic {
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0;
+}
+
+/* Typography */
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+    margin-bottom: 0px;
+}
+
+.job-title{
+    color: #F3BF99;
+    text-align: center;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.website-link {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 10.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 15.36px */
+}
+
+.about-div > h3,
+.interests-div > h3 {
+    color: #F5F5F5;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.about-div > p,
+.interests-div > p{
+    margin-top: 0;
+    color: #DCDCDC;
+    font-family: Inter;
+    font-size: 10.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 15.36px */
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+footer > #socmed-icons,
+footer > a {
+    font-size: 2em;
+    color: #918E9B;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+/* Buttons */
+#email,
+#linkedIn {
+    display: flex;
+    width: 115px;
+    padding: 9px 13px 9px 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#email{
+    background: var(--white, #FFF);
+    border: 1px solid var(--gray-300, #D1D5DB);    
+}
+
+#linkedIn{
+    background: #5093E2;
+    border: none;
+    color: #FFF;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #23252C;
+}
